@@ -34,7 +34,7 @@ io.on('connection', function (socket) {// WebSocket Connection
 				io.clients.forEach(function each(client){
 					if(client.readyState === WebSocket.OPEN)
 					{
-						client.send("server bitch!")
+						client.send("server ready!")
 					}
 				});
 			}
